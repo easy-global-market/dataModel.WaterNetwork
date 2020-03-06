@@ -1,8 +1,8 @@
 {
-    "id": "urn:ngsi-ld:Junction:63fe7d79-0d4c-4da9-b7d0-3340efa0656a",
-    "type": "Junction",
-    "createdAt": "2020-02-20T15:42:00Z",
-    "modifiedAt": "2020-02-20T15:45:00Z",
+    "id": "urn:ngsi-ld:Reservoir:1863179e-3768-4480-9167-ff21f870dd19",
+    "type": "Reservoir",
+    "createdAt": "2020-03-02T15:42:00Z",
+    "modifiedAt": "2020-03-02T15:45:00Z",
     "location": {
         "type": "GeoProperty",
         "value": {
@@ -11,38 +11,39 @@
                24.30623,
                60.07966
             ]
-         }
+         }   
+    },
+    "reservoirHead": {
+        "type": "Property",
+        "value": 59.00,
+        "unitCode":"MTR"
     },
     "elevation": {
         "type": "Property",
         "value": 105.8,
-        "unitCode": "MTR"
+        "unitCode":"MTR"
     },
     "demand": {
         "type": "Property",
         "value": 1.763868462,
         "unitCode": "MQS"
     },
-    "tags": {
+    "baseDemand": {
         "type": "Property",
-        "value": ["DMA1", "DMA2"]
-    },
-    "refPattern": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Pattern:fbcb5fc8-8ca3-4533-a2eb-34bc89262190"
+        "value": 1.763868462,
+        "unitCode": "MQS"
     },
     "description": {
         "type": "Property",
-        "value": "This entity contains a harmonised description of a Junction"
+        "value": "This entity contains a harmonised description of a Reservoir"
     },
     "initialQuality": {
         "type": "Property",
         "value": "low"
     },
-    "emitterCoefficient": {
-        "type": "Property",
-        "value": 0.526,
-        "unitCode": "MQS"
+    "refPattern": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Pattern:fbcb5fc8-8ca3-4533-a2eb-34bc89262190"
     },
     "sourceType": {
         "type": "Property",
@@ -50,8 +51,7 @@
     },
     "sourceQuality": {
         "type": "Property",
-        "value": 1.2,
-        "unitCode": "F31"
+        "value": "low"
     },
     "sourcePattern": {
         "type": "Relationship",
@@ -60,11 +60,6 @@
     "demandPattern": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:Pattern:fbcb5fc8-8ca3-4533-a2eb-34bc89262190"
-    },
-    "baseDemand": {
-        "type": "Property",
-        "value": 1.763868462,
-        "unitCode": "MQS"
     },
     "@context": [
         "https://schema.lab.fiware.org/ld/context"

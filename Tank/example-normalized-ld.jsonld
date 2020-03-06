@@ -1,8 +1,8 @@
 {
     "id": "urn:ngsi-ld:Tank:1863179e-3968-4493-9167-ee21f880cc02",
     "type": "Tank",
-    "createdAt": "2020-02-18T15:42:00Z",
-    "modifiedAt": "2020-02-18T15:45:00Z",
+    "createdAt": "2020-03-02T15:42:00Z",
+    "modifiedAt": "2020-03-02T15:45:00Z",
     "location": {
         "type": "GeoProperty",
         "value": {
@@ -15,27 +15,82 @@
     },
     "elevation": {
         "type": "Property",
-        "value": 112.9
+        "value": 112.9,
+        "unitCode": "MTR"
     },
     "initLevel": {
         "type": "Property",
-        "value": 3
+        "value": 3,
+        "unitCode": "MTR"
     },
     "minLevel": {
         "type": "Property",
-        "value": 0
+        "value": 0,
+        "unitCode": "MTR"
     },
     "maxLevel": {
         "type": "Property",
-        "value": 6.75
+        "value": 6.75,
+        "unitCode": "MTR"
     },
     "minVolume": {
         "type": "Property",
-        "value": 0
+        "value": 0,
+        "unitCode": "MTQ"
     },
-    "diameter": {
+    "nominalDiameter": {
         "type": "Property",
-        "value": 13.73
+        "value": 13.73,
+        "unitCode": "MTR"
+    },
+    "description": {
+        "type": "Property",
+        "value": "This entity contains a harmonised description of a Tank"
+    },
+    "initialQuality": {
+        "type": "Property",
+        "value": "low"
+    },
+    "emitterCoefficient": {
+        "type": "Property",
+        "value": 0.526,
+        "unitCode": "C62"
+    },
+    "sourceType": {
+        "type": "Property",
+        "value": "MASS"
+    },
+    "sourceQuality": {
+        "type": "Property",
+        "value": 1.2,
+        "unitCode": "C62"
+    },
+    "sourcePattern": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Pattern:fbcb5fc8-8ca3-4533-a2eb-34bc89262190"
+    },
+    "demandPattern": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Pattern:fbcb5fc8-8ca3-4533-a2eb-34bc89262190"
+    },
+    "baseDemand": {
+        "type": "Property",
+        "value": 1.763868462,
+        "unitCode": "MQS"
+    },
+    "demand": {
+        "type": "Property",
+        "value": 1.763868462,
+        "unitCode": "MQS"
+    },
+    "mixingModel": {
+        "type": "Property",
+        "value": "mixed"
+    },
+    "volCurve": {
+        "type": "Property",
+        "value": 200,
+        "unitCode": "MTQ"
     },
     "@context": [
         "https://schema.lab.fiware.org/ld/context"
